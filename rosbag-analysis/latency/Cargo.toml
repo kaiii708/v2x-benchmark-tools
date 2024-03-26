@@ -1,0 +1,22 @@
+[package]
+name = "rosbag2-analysis"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.65"
+async-std = { version = "1.12.0", features = ["attributes"] }
+clap = { version = "4.0.17", features = ["derive"] }
+flume = "0.10.14"
+futures = "0.3.24"
+indexmap = { version = "1.9.1", features = ["rayon"] }
+itertools = "0.10.5"
+sqlx = { version = "0.6.2", features = ["sqlite", "runtime-async-std-rustls"] }
+join-ordered-streams = { git = "https://github.com/jerry73204/join-ordered-streams.git", rev = "05eb049e8e2c676b78bd1bde2e23c3de754c5298" }
+noisy_float = "0.2.0"
+
+r2r = "0.7.5"
+cdr = "0.2.4"
+# r2r-utils = { version = "0.1.0", path = "./src/r2r-utils" }
